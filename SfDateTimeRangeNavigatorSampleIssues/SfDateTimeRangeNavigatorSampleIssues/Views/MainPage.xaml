@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:rangeNavigator="clr-namespace:Syncfusion.RangeNavigator.XForms;assembly=Syncfusion.SfChart.XForms"
+             xmlns:sfChart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             x:Class="SfDateTimeRangeNavigatorSampleIssues.Views.MainPage"
+             Title="MainPage">
+
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="SfDateTimeRangeNavigatorStyle" TargetType="rangeNavigator:SfDateTimeRangeNavigator">
+        <Setter Property="HeightRequest" Value="100" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <Grid>
+    <rangeNavigator:SfDateTimeRangeNavigator Maximum="{Binding Maximum}" Minimum="{Binding Minimum}" Style="{StaticResource SfDateTimeRangeNavigatorStyle}" />
+  </Grid>
+</ContentPage>
